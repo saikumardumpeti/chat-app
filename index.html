@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Chat App</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="https://cdn.socket.io/4.0.1/socket.io.min.js"></script>
+    <script defer src="js/client.js"></script>
+    <script src="https://kit.fontawesome.com/527962c75f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="header">
+        <h1>Welcome to the Sai's live chat App</h1>
+        <div class="menu-icon" id="hamburger-icon">
+            <i class="fas fa-bars"></i>
+        </div>
+    </div>
+    <div class="sidebar" id="sidebar">
+        <ul>
+            <li id="clear-chat">Clear Chat</li>
+        </ul>
+    </div>
+    <div id="chat-container">
+        <div id="message-container" class="message-container"></div>
+        <form id="message-form" action="#">
+            <input type="text" name="message-input" id="message-input" placeholder="Type your message...">
+            <button>Send</button>
+        </form>
+    </div>
+</body>
+</html>
